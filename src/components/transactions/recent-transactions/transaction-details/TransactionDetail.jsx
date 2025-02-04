@@ -1,7 +1,3 @@
-// {
-//   category, title, date, price;
-// }
-
 import styles from "./TransactionDetail.module.css";
 import {
   deleteSvgIcon,

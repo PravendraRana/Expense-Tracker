@@ -26,7 +26,6 @@ const ExpenseTracker = () => {
     <>
       <p className={styles.title}>Expense Tracker</p>
       <div className={styles.wrapper}>
-        {/* <div className={styles.cardWrapper}> */}
         <Card
           titleLabel="Wallet Balance"
           labelValue={walletBalance}
@@ -39,7 +38,6 @@ const ExpenseTracker = () => {
           addIncome={false}
         />
         <Piechart />
-        {/* </div> */}
       </div>
     </>
   );

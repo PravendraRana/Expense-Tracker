@@ -6,7 +6,6 @@ const TopExpenses = () => {
     <>
       <div
         style={{
-          // minWidth: "738.33px",
           width: "100%%",
           minHeight: "380px",
           height: "calc(100% - 70px)",

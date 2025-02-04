@@ -1,6 +1,5 @@
 import TransactionDetail from "../transaction-details/TransactionDetail";
 import styles from "./RecentTransaction.module.css";
-// import { recentTransactions } from "../../../../mocks/recentTransactions.mocks";
 import { nextSvgIcon, previousSvgIcon } from "../../../../assets";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
@@ -69,7 +68,6 @@ const RecentTransaction = () => {
     <>
       <div
         style={{
-          // minWidth: "738.33px",
           width: "100%",
           minHeight: "380px",
           height: "calc(100% - 70px)",

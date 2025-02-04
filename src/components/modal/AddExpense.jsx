@@ -16,7 +16,6 @@ const AddExpense = ({ open, setOpen, edit = false, transactionId = "" }) => {
   useEffect(() => {
     if (edit) {
       let previousData = JSON.parse(localStorage.getItem("recentTransactions"));
-
       let data = previousData.find((item) => item.id === transactionId);
       const { id, ...rest } = data;
       setForm(rest);
@@ -37,14 +36,12 @@ const AddExpense = ({ open, setOpen, edit = false, transactionId = "" }) => {
     let balance = localStorage.getItem("walletBalance");
     let expenses = localStorage.getItem("expenses");
     let previousData = JSON.parse(localStorage.getItem("recentTransactions"));
-    // let newFormData = [...previousData, { ...form, id: uuidv4() }];
     let newFormData = [];
     let balannceToUpdateInWallet = "";
     let balanceToUpdatExpense = "";
 
     if (edit) {
       let index = previousData.findIndex((item) => item.id === transactionId);
-      // previousData[index] = form;
       newFormData = [...previousData];
       newFormData[index] = { ...form, id: transactionId };
       if (+form.price > +previousData[index].price) {
